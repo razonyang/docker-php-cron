@@ -14,7 +14,7 @@ Usage
 ### Docker run
 
 ```shell
-$ docker run --name php-cron razonyang/php-cron:7.3
+$ docker run --name php-cron razonyang/php-cron:7.4
 ```
 
 Verify:
