@@ -14,7 +14,7 @@ Usage
 ### Docker run
 
 ```shell
-$ docker run --name php-cron razonyang/php-cron:7.4
+$ docker run --name php-cron razonyang/php-cron:latest
 ```
 
 Verify:
@@ -32,7 +32,7 @@ Custom configuration
 
 ```shell
 $ docker run --name php-cron \
-    -v /your/crontab:/etc/crontab:ro razonyang/php-cron:7.3 \
+    -v /your/crontab:/etc/crontab:ro razonyang/php-cron:latest \
     /bin/bash -c "/usr/bin/crontab /etc/crontab && /usr/sbin/cron -f"
 ```
 
@@ -46,7 +46,7 @@ We MUST apply the new `crontab` before starting `cron` service.
 ```yml
 services:
   cron:
-    image: razonyang/php-cron:7.3
+    image: razonyang/php-cron:latest
     restart: always
     volumes:
       - ./crontab:/etc/crontab:ro
