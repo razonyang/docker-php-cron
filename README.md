@@ -4,7 +4,8 @@ PHP Cron Docker Image
 Tags
 ----
 
-- razonyang/php-cron:7.3(latest)
+- razonyang/php-cron:7.4(latest)
+- razonyang/php-cron:7.3
 - razonyang/php-cron:7.2
 
 Usage
